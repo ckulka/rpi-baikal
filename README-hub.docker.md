@@ -11,6 +11,7 @@ The following command will run Baikal, including HTTPS over self-signed certific
 ```
 docker run --rm -it -p 80:80 -p 443:443 ckulka/rpi-baikal
 ```
+This image is based on [ckulka/rpi-nginx](https://hub.docker.com/r/ckulka/rpi-nginx) - refer to this repo for further details on nginx.
 
 ### SSL Certificates
 If you want to use your own certificates, either hide this container behind your own HTTPS proxy (e.g. [ckulka/rpi-nginx](https://hub.docker.com/r/ckulka/rpi-nginx)) or you mount your certificates into the container:
