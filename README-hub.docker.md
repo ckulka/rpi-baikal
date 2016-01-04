@@ -12,4 +12,4 @@ docker run --rm -it -p 80:80 -p 443:443 ckulka/rpi-baikal
 ```
 
 ### Persistent Data
-The folder /var/www/Specific contains the persistent data. It's marked as volume and should be part of a regular backup.
+The folder ```/var/www/Specific``` contains the persistent data. It's marked as volume and should be part of a regular backup.
