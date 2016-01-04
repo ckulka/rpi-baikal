@@ -5,7 +5,7 @@ This repository provides a Dockerfile for Nginx on Raspberry Pi.
 ```
 # Shell working directory is where this README.md is
 docker build -t ckulka/rpi-baikal .
-docker run --rm -it -p 80:80 -p 443:443 ckulka/nginx
+docker run --rm -it -p 80:80 -p 443:443 ckulka/rpi-nginx
 ```
 
 
