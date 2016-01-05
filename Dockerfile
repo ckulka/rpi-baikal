@@ -36,6 +36,6 @@ COPY files/start-nginx-php5.sh /opt/
 
 ## IMAGE CONFIGURATION
 
-VOLUME /var/www/html/Specific
+VOLUME /var/www/Specific
 
 CMD ["bash", "/opt/start-nginx-php5.sh"]
