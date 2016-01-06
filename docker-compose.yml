@@ -1,0 +1,19 @@
+nginx:
+  image: ckulka/rpi-baikal
+  environment:
+    - NGINX_NO_UPDATE
+  ports:
+    - "80:80"
+    - "443:443"
+
+backup:
+  image: ckulka/rpi-awscli
+  volumes_from:
+    - nginx
+  environment:
+    - AWS_ACCESS_KEY_ID=my-access-key-id
+    - AWS_SECRET_ACCESS_KEY=my-access-key-secred
+    - AWS_DEFAULT_REGION=eu-central-1
+    - BACKUP_LOCAL=/var/www/Specific
+    - BACKUP_S3=s3://my-backup-bucket/baikal
+  command: "sh /opt/aws-s3-sync-restore.sh"
