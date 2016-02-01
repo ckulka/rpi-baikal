@@ -14,7 +14,6 @@ ENV VERSION 0.2.7
 RUN \
 	apt-get install curl &&\
 	curl http://baikal-server.com/get/baikal-regular-$VERSION.tgz | tar xz --strip-components=1 -C /var/www &&\
-	touch /var/www/Specific/ENABLE_INSTALL &&\
 	chown -R www-data:www-data /var/www &&\
 	apt-get autoremove curl
 
