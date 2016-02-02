@@ -7,3 +7,6 @@ After=docker
 ExecStart=/usr/local/bin/docker-compose -f /etc/baikal/docker-compose.yml up
 ExecReload=/usr/local/bin/docker-compose -f /etc/baikal/docker-compose.yml restart
 ExecStop=/usr/local/bin/docker-compose -f /etc/baikal/docker-compose.yml stop
+
+[Install]
+WantedBy=multi-user.target
