@@ -1,3 +1,7 @@
+# Baikal for Raspberry Pi
+
+**DEPRECATED!** This repository has moved to [ckulka/baikal-docker](https://github.com/ckulka/baikal-docker) and the [ckulka/baikal](https://hub.docker.com/r/ckulka/rpi-baikal/) image which now also support ARM devices like Raspberry Pi.
+
 This repository provides an image for Baikal (http://baikal-server.com/) on Raspberry Pi.
 Automated builds currently fail since Docker Hub currently doesn't support ARM platforms.
 
